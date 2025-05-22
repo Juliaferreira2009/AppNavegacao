@@ -9,7 +9,6 @@ import {
 } from "react-native";
 
 const windowWidth = Dimensions.get("window").width;
-
 export default function Login({ navigation }) {
   return (
     <View style={styles.container}>
@@ -40,12 +39,7 @@ export default function Login({ navigation }) {
 
       <Text style={styles.subtitle}>Não tem login?</Text>
 
-      <View style={styles.buttonContainer}>
-        <Button
-          title="Cadastro"
-          onPress={() => navigation.navigate("Cadastro")}
-        />
-      </View>
+  
     </View>
   );
 }
@@ -55,7 +49,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#f0f0f0",
+    backgroundColor: "##A1C3B9",
   },
   title: {
     fontSize: 24,
@@ -69,16 +63,17 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   input: {
-    backgroundColor: "#fff",
+    backgroundColor: "#A1C3B9",
     borderWidth: 1,
-    borderColor: "#aaa",
+    backgroundColor: "#A1C3B9",
+    borderColor: "",
     borderRadius: 10,
     paddingHorizontal: 10,
     paddingVertical: 8,
     marginBottom: 5,
   },
   buttonContainer: {
-    backgroundColor: "#ddaedd",
+    backgroundColor: "#A1C3B9",
     margin: 5,
     width: windowWidth * 0.5,
     borderRadius: 10,
